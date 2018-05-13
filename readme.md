@@ -7,11 +7,14 @@ This is project to create a chatbot to mimic our coworker Will while he is out o
 * Write the text of Will's messages into a .txt file
 * Run it through a Markov chain to generate Will...ish sentences
 * Create a bot that will  post Will...ish messages to #chalice channel
-* * { periodically? listen for certain keywords? }
+  * { periodically? listen for certain keywords? }
 
 **Contribute**
 * Fork this project
 * Get a token from https://api.slack.com/custom-integrations/legacy-tokens
-* create a file tmp/slack_secret.js with the following format:
-`const token = 'YOUR_SLACK_TOKEN_HERE';
-module.exports = { token };`
+* create a file `tmp/slack_secret.js` with the following format:
+
+```javascript
+const token = 'YOUR_SLACK_TOKEN_HERE';
+module.exports = { token };
+```
